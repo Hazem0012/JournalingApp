@@ -54,8 +54,7 @@ You can configure the app using `.env` files (do not commit secrets). Common var
 - `POSTGRES_DB`, `POSTGRES_USER`, `POSTGRES_PASSWORD`
 - `DB_HOST`, `DB_PORT`
 
-**Frontend**
-- `VITE_API_BASE_URL`
+
 
 ### Production Deployment (Docker)
 This project is deployed on AWS EC2 using Docker Compose behind an HTTPS reverse proxy.
@@ -69,12 +68,12 @@ This project is deployed on AWS EC2 using Docker Compose behind an HTTPS reverse
    - `/auth` and API routes -> backend container
 
 ## Why This Project Exists
-This project was built to demonstrate real-world full stack engineering skills, including:
-- Designing a scalable API
-- Handling authentication securely
-- Building a modern frontend
-- Containerizing applications with Docker
-- Production cloud deployment
+This project was built to demonstrate real-world full-stack engineering skills, including:
+- Designing a scalable API.
+- Handling authentication securely.
+- Building a modern frontend.
+- Containerizing applications with Docker.
+- Production cloud deployment (AWS).
 
 It is intended as a portfolio project and a foundation for future feature expansion.
 
