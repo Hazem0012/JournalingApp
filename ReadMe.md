@@ -1,5 +1,5 @@
 # Journaling App - Echos of Ink
-A full stack journaling web application that lets users securely create, edit, search, and manage personal journal entries. Built with a modern API-driven backend, a responsive frontend UI, and designed for production deployment with Docker and cloud infrastructure. This project is deployed on AWS.
+A full-stack journaling web application that lets users securely create, edit, search, and manage personal journal entries. Built with a modern API-driven backend, a responsive frontend UI, and designed for production deployment with Docker and cloud infrastructure. This project is deployed on AWS. Website available at https://echosofink.ca
 
 ## Tech Stack
 ### **Backend**
