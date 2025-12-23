@@ -1,0 +1,42 @@
+# Files not needed in Docker build context
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+.local/
+
+# Editor and VCS metadata
+.git
+.gitignore
+.vscode/
+.idea/
+.DS_Store
+
+# Environment and secrets
+.env
+.env.*
+*.pem
+
+# Test, coverage, and caches
+.pytest_cache/
+.coverage
+coverage.xml
+.cache/
+.mypy_cache/
+.ruff_cache/
+hypothesis/
+
+# Logs and databases
+*.log
+*.db
+*.sqlite
+*.sqlite3
+database.db
+
+# Optional tooling
+node_modules/
+README.Docker.md

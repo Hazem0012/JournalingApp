@@ -1,0 +1,38 @@
+# Python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+.local/
+
+# Environment variables
+.env
+.env.*
+
+# Editors/IDEs
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+
+# Databases and storage
+*.db
+*.sqlite
+*.sqlite3
+
+# Logs
+*.log
+
+# Tests, coverage, and caches
+.cache/
+.pytest_cache/
+.coverage
+coverage.xml
+htmlcov/
+.mypy_cache/
+.ruff_cache/

@@ -1,0 +1,9 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400;500;600;700&family=Fredoka:wght@300..700&display=swap');
+
+@custom-variant dark (&:where(.dark, .dark *));
+.cormorant-sc-regular{
+    font-family:"Cormorant SC", serif;
+    font-weight: 300;
+    font-style: normal;
+}

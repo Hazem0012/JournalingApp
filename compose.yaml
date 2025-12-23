@@ -1,0 +1,47 @@
+services:
+  db:
+    image: postgres:14
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB}
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+    ports:
+      - "5432:5432"
+  backend:
+    build: ./backend
+    image: journalingapp/backend
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
+
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB}
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      DB_HOST: db
+      DB_PORT: 5432
+      SECRET_KEY: ${SECRET_KEY}
+      APP_ENV: ${APP_ENV}
+
+      
+
+    volumes:
+      - logs:/app/logs
+
+  frontend:
+    build: ./frontend
+  
+    image: journalingapp/frontend
+    ports:
+      - "8080:80"
+    depends_on:
+      - backend
+
+volumes: 
+  pgdata:
+  logs:     
